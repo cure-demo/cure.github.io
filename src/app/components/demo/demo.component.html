@@ -1,0 +1,153 @@
+<form
+  [formGroup]="demoForm"
+  ngNativeValidate
+  (keydown.enter)="$event.preventDefault()"
+>
+  <mat-card
+    style="    width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  background-color: palevioletred;
+  color: white;
+  font-size: 20px;"
+  >
+    <div class="row">
+      <div class="col-md-1 text-center">BP</div>
+      <div class="col-md-1  text-center">SG</div>
+      <div class="col-md-1  text-center">SU</div>
+      <div class="col-md-1  text-center">RBC</div>
+      <div class="col-md-1  text-center">PC</div>
+      <div class="col-md-1  text-center">PCC</div>
+      <div class="col-md-1  text-center">BA</div>
+      <div class="col-md-1  text-center">BGR</div>
+      <div class="col-md-1  text-center">BU</div>
+      <div class="col-md-1  text-center">SC</div>
+      <div class="col-md-1  text-center">SOD</div>
+      <div class="col-md-1  text-center">WC</div>
+    </div>
+    <div class="row">
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input1"
+          input1
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input2"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input3"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input4"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input5"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input6"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input7"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input8"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input9"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input10"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input11"
+          style="color: white;"
+          required
+        />
+      </div>
+      <div class="col-md-1  text-center">
+        <input
+          type="text"
+          formControlName="input12"
+          style="color: white;"
+          required
+        />
+      </div>
+    </div>
+  </mat-card>
+  <div class="col-md-12 text-center" style="margin-top: 30px;;">
+    <mat-card-actions class="login-button-style">
+      <button
+        style="background-color:darkcyan;color: white"
+        mat-raised-button
+        (click)="SubmitForm(demoForm.value)"
+      >
+        Submit
+      </button>
+    </mat-card-actions>
+  </div>
+</form>
+
+<mat-card
+  id="showBlock"
+  style="    width: 25%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+background-color: palevioletred;
+color: white;
+font-size: 20px;display: none;"
+  class="text-center"
+  >You are Seek</mat-card
+>

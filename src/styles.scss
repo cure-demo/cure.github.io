@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/bootstrap-reboot";
+@import "~bootstrap/scss/bootstrap-grid";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif, "Source Sans Pro";
+}
+body {
+  background-color: cadetblue !important;
+  overflow-x: hidden;
+}
+.input-style {
+  border: none !important;
+  box-shadow: none !important;
+  height: 0rem;
+}
+// .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+//   padding: 0px !important;
+// }
+// .mat-form-field-appearance-legacy .mat-form-field-infix {
+//   padding: 0 !important;
+// }
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  background: transparent;
+}
+.cdk-global-scrollblock {
+  overflow-y: hidden;
+}
